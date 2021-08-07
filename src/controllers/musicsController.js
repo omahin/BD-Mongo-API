@@ -44,12 +44,12 @@ const createMusic = (req, res) => {
     })
     
 
-musics.findOne({ id:musicId}, function( err,musicFound){
-    if(err){
-    res.status(500).send({ message: err.message })
-    }else{
-        if(musicFound){
-    // newMusic= new musics(music)
+// musics.findOne({ id:musicId}, function( err,musicFound){
+//     if(err){
+//     res.status(500).send({ message: err.message })
+//     }else{
+//         if(musicFound){
+//     newMusic= new musics(music)
     newMusic.save(function(err){
         if(err){
             res.status(500).send({ message: err.message })

@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 //estrutura do seu model (atributos da sua entidade)
 const musicsSchema = new mongoose.Schema({
-    id: { type: Number },
+    id: { type: SchemaTypes.Double },
     title: { type: String },
     duration: { type: String },
     launchYear: { type: Boolean },
